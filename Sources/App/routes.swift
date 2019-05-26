@@ -6,10 +6,13 @@ public func routes(_ router: Router) throws {
     router.get { req in
         return "It works!"
     }
-    
+
     // Basic "Hello, world!" example
     router.get("hello") { req in
         return "Hello, world!"
+    }
+    router.get("getName") { req in
+        return "ram!"
     }
 
     // Example of configuring a controller
